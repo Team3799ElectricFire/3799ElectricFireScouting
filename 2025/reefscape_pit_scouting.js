@@ -5,6 +5,13 @@ var config_data = `
   "page_title": "REEFSCAPE",
   "pitConfig": "true",
   "prematch": [
+      { "name": "Scouter Initials",
+      "code": "s",
+      "type": "scouter",
+      "size": 5,
+      "maxSize": 5,
+      "required": "true"
+    },
     { "name": "Team Number",
       "code": "t",
       "type": "number"
@@ -25,17 +32,10 @@ var config_data = `
       "choices": {
         "s": "Swerve<br>",
         "w": "West Coast/Tank<br>",
-        "b": "Butterfly/Grashopper<br>",
         "m": "Mechanum<br>",
         "o": "Other"
       },
       "defaultValue": "o"
-    },
-    { "name": "Other Drivetrain",
-      "code": "odt",
-      "type": "text",
-      "size": 20,
-      "maxSize": 50
     },
     { "name": "Swerve Ratio",
       "code": "sr",
@@ -61,17 +61,68 @@ var config_data = `
       },
       "defaultValue":"x"
     },
-    { "name": "# of Batteries",
-      "code": "nob",
-      "type": "number"
+    { "name": "Other Drivetrain",
+      "code": "odt",
+      "type": "text",
+      "size": 20,
+      "maxSize": 50
     },
-    { "name": "Floor pickup Coral",
-      "code": "fpu",
+   { "name": "Coral Pickup",
+      "code": "cpu",
+      "type": "radio",
+      "choices": {
+        "fd": "Feeder<br>",
+        "fl": "Floor<br>",
+        "b": "Both<br>",
+        "x": "Cannot<br>"
+      },
+      "defaultValue":"x"
+    },
+    { "name": "Algae Pickup",
+      "code": "apu",
+      "type": "radio",
+      "choices": {
+        "r": "Reef<br>",
+        "f": "Floor<br>",
+        "b": "Both<br>",
+        "x": "Cannot<br>"
+      },
+      "defaultValue":"x"
+    },
+     { "name": "L1 Coral",
+      "code": "l1c",
       "type": "bool"
     },
-    { "name": "Floor pickup Algae",
-      "code": "fpa",
+     { "name": "L2 Coral",
+      "code": "l2c",
       "type": "bool"
+    },
+     { "name": "L3 Coral",
+      "code": "l3c",
+      "type": "bool"
+    },
+     { "name": "L4 Coral",
+      "code": "l4c",
+      "type": "bool"
+    },
+     { "name": "Score Processor",
+      "code": "scp",
+      "type": "bool"
+    },
+     { "name": "Score Net",
+      "code": "scn",
+      "type": "bool"
+    },
+     { "name": "Hang Cage",
+      "code": "hgc",
+      "type": "radio",
+      "choices": {
+        "s": "Shallow (high)<br>",
+        "d": "Deep (low)<br>",
+        "b": "Both<br>",
+        "x": "Cannot<br>"
+      },
+      "defaultValue":"x"
     },
     { "name": "Autos",
       "code": "aut",
@@ -84,6 +135,10 @@ var config_data = `
       "type": "text",
       "size": 20,
       "maxSize": 250
+    },
+     { "name": "# of Batteries",
+      "code": "nob",
+      "type": "number"
     },
     { "name": "Comments",
       "code": "co",
