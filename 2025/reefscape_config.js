@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2025ilpe",
+      "defaultValue": "2025nyro",
       "required": "true"
     },
     { "name": "Match Level",
@@ -24,7 +24,8 @@ var config_data = `
       "choices": {
         "qm": "Quals<br>",
         "sf": "Semifinals<br>",
-        "f": "Finals"
+        "f": "Finals<br>",
+        "p": "Practice"
       },
       "defaultValue": "qm",
       "required": "true"
@@ -86,6 +87,10 @@ var config_data = `
       "code": "ac4",
       "type": "counter"
     },
+    { "name": "Coral Dropped",
+      "code": "acd",
+      "type": "counter"
+    },
     { "name": "Auto Scoring Position",
       "code": "asp",
       "type": "clickable_image",
@@ -118,6 +123,10 @@ var config_data = `
     },
     { "name": "Coral L4",
       "code": "tc4",
+      "type": "counter"
+    },
+    { "name": "Coral Dropped",
+      "code": "tcd",
       "type": "counter"
     },
     { "name": "Processor Score",
@@ -155,8 +164,8 @@ var config_data = `
       "choices": {
         "bp": "Parked<br>",
         "ba": "Parked/Failed Climb<br>",
-        "bs": "Shallow Cage<br>",
-        "bd": "Deep Cage<br>",
+        "bs": "Shallow (high) Cage<br>",
+        "bd": "Deep (low) Cage<br>",
         "x": "Not attempted"
       },
       "defaultValue": "x"
@@ -215,10 +224,6 @@ var config_data = `
     },
     { "name": "Tippy<br>(almost tipped over)",
       "code": "tip",
-      "type": "bool"
-    },
-    { "name": "Dropped Coral (>2)",
-      "code": "dc",
       "type": "bool"
     },
     { "name": "Dropped Algae (>2)",
