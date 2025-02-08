@@ -37,29 +37,11 @@ var config_data = `
       },
       "defaultValue": "o"
     },
-    { "name": "Swerve Ratio",
-      "code": "sr",
-      "type": "radio",
-      "choices": {
-        "1": "L1 (8.14:1)<br>",
-        "2": "L2 (6.75:1)<br>",
-        "3": "L3 (6.12:1)<br>",
-        "4": "L4 (5.14:1)<br>",
-        "o": "Other ratio (put in comments)<br>",
-        "x": "Not Swerve"
-      },
-      "defaultValue":"x"
-    },
-    { "name": "Drivetrain Motor",
-      "code": "mot",
-      "type": "radio",
-      "choices": {
-        "n": "Neo<br>",
-        "f": "Falcon<br>",
-        "c": "CIM<br>",
-        "x": "Other<br>"
-      },
-      "defaultValue":"x"
+   { "name": "Max Groundspeed<br>fps",
+      "code": "mgs",
+      "type": "text",
+      "size": 20,
+      "maxSize": 50
     },
     { "name": "Other Drivetrain",
       "code": "odt",
@@ -124,21 +106,90 @@ var config_data = `
       },
       "defaultValue":"x"
     },
+      { "name": "Has Auto",
+      "code": "hau",
+      "type": "bool"
+    },
     { "name": "Autos",
       "code": "aut",
       "type": "text",
       "size": 20,
       "maxSize": 250
     },
-    { "name": "Scouting Method /<br>Program (ScoutingPASS?)",
-      "code": "sct",
+    { "name": "Programming Lang",
+      "code": "pgl",
+      "type": "radio",
+      "choices": {
+        "j": "Java<br>",
+        "c": "C++<br>",
+        "l": "LabVIEW<br>",
+        "p": "Python<br>"
+      },
+      { "name": "RoboRio",
+      "code": "rio",
+      "type": "radio",
+      "choices": {
+        "1": "RIO 1<br>",
+        "2": "RIO 2<br>",
+        "u": "IDK<br>"
+      },
+     { "name": "# of Camaras",
+      "code": "noc",
       "type": "text",
       "size": 20,
       "maxSize": 250
     },
-     { "name": "# of Batteries",
-      "code": "nob",
-      "type": "number"
+    { "name": "Vision Pipeline",
+      "code": "vsp",
+      "type": "radio",
+      "choices": {
+        "p": "Photon Vision<br>",
+        "l": "Limelight<br>",
+        "o": "Other<br>",
+        "n": "No Vision"
+      },
+       { "name": "Vision Coprocessor",
+      "code": "vsc",
+      "type": "radio",
+      "choices": {
+        "r": "Raspberry Pi 5<br>",
+        "o": "Orange Pi<br>",
+        "t": "Other<br>",
+        "n": "No Vision"
+      },
+        { "name": "Vision Comments",
+      "code": "vco",
+      "type": "text",
+      "size": 20,
+      "maxSize": 250
+    },
+      { "name": "Current Mgmt<br>Preventing Brownout",
+      "code": "cmg",
+      "type": "text",
+      "size": 20,
+      "maxSize": 250
+    },
+     { "name": "Current Mgmt?<br>Preventing Brownout",
+      "code": "cmg",
+      "type": "text",
+      "size": 20,
+      "maxSize": 250
+    },
+    { "name": "Wiring Hacks?<br>Quick/Easy/Better",
+      "code": "wrh",
+      "type": "text",
+      "size": 20,
+      "maxSize": 250
+    },
+     { "name": "Load Test Batteries?",
+      "code": "ltb",
+      "type": "bool"
+    },
+     { "name": "How do you quantify<br>Your Outreach Impact?",
+      "code": "qoi",
+      "type": "text",
+      "size": 20,
+      "maxSize": 250
     },
     { "name": "Comments",
       "code": "co",
