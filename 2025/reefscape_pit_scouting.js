@@ -133,6 +133,7 @@ var config_data = `
         "2": "RIO 2<br>",
         "u": "IDK<br>"
       },
+      },
      { "name": "# of Camaras",
       "code": "noc",
       "type": "text",
@@ -148,6 +149,7 @@ var config_data = `
         "o": "Other<br>",
         "n": "No Vision"
       },
+      },
        { "name": "Vision Coprocessor",
       "code": "vsc",
       "type": "radio",
@@ -156,6 +158,7 @@ var config_data = `
         "o": "Orange Pi<br>",
         "t": "Other<br>",
         "n": "No Vision"
+      },
       },
         { "name": "Vision Comments",
       "code": "vco",
