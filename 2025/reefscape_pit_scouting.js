@@ -125,7 +125,6 @@ var config_data = `
         "l": "LabVIEW<br>",
         "p": "Python<br>"
       },
-      "defaultValue":"j"
     },
     { "name": "RoboRio",
       "code": "rio",
