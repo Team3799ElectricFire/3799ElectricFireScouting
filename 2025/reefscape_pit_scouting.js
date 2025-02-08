@@ -125,7 +125,7 @@ var config_data = `
         "l": "LabVIEW<br>",
         "p": "Python<br>"
       },
-      { "name": "RoboRio",
+       { "name": "RoboRio",
       "code": "rio",
       "type": "radio",
       "choices": {
