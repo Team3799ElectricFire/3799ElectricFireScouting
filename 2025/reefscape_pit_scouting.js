@@ -16,6 +16,12 @@ var config_data = `
       "code": "t",
       "type": "number"
     },
+    { "name": "Event",
+      "code": "e",
+      "type": "event",
+      "defaultValue": "2025nyro",
+      "required": "true"
+    },
     { "name": "Width",
       "code": "wid",
       "type": "number",
@@ -167,12 +173,6 @@ var config_data = `
       },
         { "name": "Vision Comments",
       "code": "vco",
-      "type": "text",
-      "size": 20,
-      "maxSize": 250
-    },
-      { "name": "Current Mgmt<br>Preventing Brownout",
-      "code": "cmg",
       "type": "text",
       "size": 20,
       "maxSize": 250
