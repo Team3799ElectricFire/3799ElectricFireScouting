@@ -126,7 +126,7 @@ var config_data = `
         "p": "Python<br>"
       },
       },
-       { "name": "RoboRio",
+    { "name": "RoboRio",
       "code": "rio",
       "type": "radio",
       "choices": {
