@@ -56,7 +56,7 @@ var config_data = `
         "fd": "Feeder<br>",
         "fl": "Floor<br>",
         "b": "Both<br>",
-        "x": "Cannot<br>"
+        "x": "Cannot"
       },
       "defaultValue":"x"
     },
@@ -67,7 +67,7 @@ var config_data = `
         "r": "Reef<br>",
         "f": "Floor<br>",
         "b": "Both<br>",
-        "x": "Cannot<br>"
+        "x": "Cannot"
       },
       "defaultValue":"x"
     },
@@ -102,7 +102,7 @@ var config_data = `
         "s": "Shallow (high)<br>",
         "d": "Deep (low)<br>",
         "b": "Both<br>",
-        "x": "Cannot<br>"
+        "x": "Cannot"
       },
       "defaultValue":"x"
     },
@@ -133,7 +133,7 @@ var config_data = `
       "choices": {
         "1": "RIO 1<br>",
         "2": "RIO 2<br>",
-        "u": "IDK<br>"
+        "u": "IDK"
       },
        "defaultValue":"u"
     },
