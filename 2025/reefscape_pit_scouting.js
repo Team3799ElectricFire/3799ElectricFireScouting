@@ -125,7 +125,8 @@ var config_data = `
         "l": "LabVIEW<br>",
         "p": "Python<br>"
       },
-      },
+      "defaultValue":"j"
+    },
     { "name": "RoboRio",
       "code": "rio",
       "type": "radio",
@@ -134,7 +135,8 @@ var config_data = `
         "2": "RIO 2<br>",
         "u": "IDK<br>"
       },
-      },
+       "defaultValue":"u"
+    },
      { "name": "# of Camaras",
       "code": "noc",
       "type": "text",
@@ -150,8 +152,9 @@ var config_data = `
         "o": "Other<br>",
         "n": "No Vision"
       },
-      },
-       { "name": "Vision Coprocessor",
+       "defaultValue":"n"
+     },
+     { "name": "Vision Coprocessor",
       "code": "vsc",
       "type": "radio",
       "choices": {
@@ -159,7 +162,8 @@ var config_data = `
         "o": "Orange Pi<br>",
         "t": "Other<br>",
         "n": "No Vision"
-      },
+       },
+        "defaultValue":"n"
       },
         { "name": "Vision Comments",
       "code": "vco",
