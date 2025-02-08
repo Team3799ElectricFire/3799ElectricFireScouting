@@ -116,15 +116,16 @@ var config_data = `
       "size": 20,
       "maxSize": 250
     },
-    { "name": "Programming Lang",
-      "code": "pgl",
+   { "name": "Drivetrain",
+      "code": "drt",
       "type": "radio",
       "choices": {
-        "j": "Java<br>",
-        "c": "C++<br>",
-        "l": "LabVIEW<br>",
-        "p": "Python<br>"
+        "s": "Swerve<br>",
+        "w": "West Coast/Tank<br>",
+        "m": "Mechanum<br>",
+        "o": "Other"
       },
+      "defaultValue": "o"
     },
     { "name": "RoboRio",
       "code": "rio",
