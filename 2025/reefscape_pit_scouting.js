@@ -43,6 +43,29 @@ var config_data = `
       },
       "defaultValue": "o"
     },
+    { "name": "Swerve Module",
+      "code": "svm",
+      "type": "radio",
+      "choices": {
+        "s": "SDS<br>",
+        "r": "REV<br>",
+        "w": "WCP/SWERVE X<br>",
+        "x": "Not Swerve<br>",
+        "o": "Other"
+      },
+      "defaultValue": "o"
+    },
+       { "name": "Drive Wheels",
+      "code": "dvw",
+      "type": "radio",
+      "choices": {
+        "c": "Colson<br>",
+        "t": "Traction<br>",
+        "g": "Grip Locke<br>",
+        "o": "Other"
+      },
+      "defaultValue": "o"
+    },
    { "name": "Max Groundspeed<br>fps",
       "code": "mgs",
       "type": "text",
@@ -116,11 +139,23 @@ var config_data = `
       "code": "hau",
       "type": "bool"
     },
+     { "name": "Auto Coral Quantity",
+      "code": "acq",
+      "type": "text",
+      "size": 20,
+      "maxSize": 10
+    },
     { "name": "Autos",
       "code": "aut",
       "type": "text",
       "size": 20,
       "maxSize": 250
+    },
+     { "name": "Driving Hours",
+      "code": "dvh",
+      "type": "text",
+      "size": 20,
+      "maxSize": 20
     },
    { "name": "Programming Lang",
       "code": "pgl",
