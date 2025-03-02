@@ -25,11 +25,15 @@ var config_data = `
     { "name": "Width",
       "code": "wid",
       "type": "number",
+      "min": 0,
+      "max": 48,
       "defaultValue": "0"
     },
     { "name": "Weight",
       "code": "wei",
       "type": "number",
+      "min": 0,
+      "max": 125,
       "defaultValue": "0"
     },
     { "name": "Drivetrain",
@@ -51,9 +55,9 @@ var config_data = `
         "r": "REV<br>",
         "w": "WCP/SWERVE X<br>",
         "x": "Not Swerve<br>",
-        "o": "Other"
+        "o": "Other(Specify)"
       },
-      "defaultValue": "o"
+      "defaultValue": "x"
     },
        { "name": "Drive Wheels",
       "code": "dvw",
@@ -62,15 +66,14 @@ var config_data = `
         "c": "Colson<br>",
         "t": "Traction<br>",
         "g": "Grip Locke<br>",
-        "o": "Other"
+        "o": "Other(Specify)"
       },
       "defaultValue": "o"
     },
    { "name": "Max Groundspeed<br>fps",
       "code": "mgs",
-      "type": "text",
-      "size": 20,
-      "maxSize": 50
+      "type": "number",
+      "defaultValue": "0"
     },
     { "name": "Other Drivetrain",
       "code": "odt",
@@ -139,11 +142,12 @@ var config_data = `
       "code": "hau",
       "type": "bool"
     },
-     { "name": "Auto Coral Quantity",
+     { "name": "Auto Coral Qty.",
       "code": "acq",
-      "type": "text",
-      "size": 20,
-      "maxSize": 10
+      "type": "number",
+      "min": 0,
+      "max": 10,
+      "defaultValue": "0"
     },
     { "name": "Autos",
       "code": "aut",
@@ -153,9 +157,8 @@ var config_data = `
     },
      { "name": "Driving Hours",
       "code": "dvh",
-      "type": "text",
-      "size": 20,
-      "maxSize": 20
+      "type": "number",
+      "defaultValue": "0"
     },
    { "name": "Programming Lang",
       "code": "pgl",
