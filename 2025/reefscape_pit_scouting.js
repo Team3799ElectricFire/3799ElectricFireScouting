@@ -14,7 +14,9 @@ var config_data = `
     },
     { "name": "Team Number",
       "code": "t",
-      "type": "number"
+      "type": "number",
+      "size": 10,
+      "required": "true"
     },
     { "name": "Event",
       "code": "e",
@@ -25,6 +27,7 @@ var config_data = `
     { "name": "Width",
       "code": "wid",
       "type": "number",
+      "size": 10,
       "min": 0,
       "max": 48,
       "defaultValue": "0",
@@ -164,6 +167,8 @@ var config_data = `
      { "name": "Driving Hours",
       "code": "dvh",
       "type": "number",
+      "min": 0,
+      "max": 999,
       "defaultValue": "0"
     },
    { "name": "Programming Lang",
