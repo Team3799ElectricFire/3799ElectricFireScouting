@@ -5,7 +5,7 @@ var config_data = `
   "page_title": "REEFSCAPE",
   "pitConfig": "true",
   "prematch": [
-      { "name": "Scouter Initials",
+      { "name": "Scout Initials",
       "code": "s",
       "type": "scouter",
       "size": 5,
@@ -27,14 +27,16 @@ var config_data = `
       "type": "number",
       "min": 0,
       "max": 48,
-      "defaultValue": "0"
+      "defaultValue": "0",
+      "tooltip": "Robot width in inches"
     },
     { "name": "Weight",
       "code": "wei",
       "type": "number",
       "min": 0,
       "max": 125,
-      "defaultValue": "0"
+      "defaultValue": "0",
+      "tooltip": "Weight without bumpers or battery"
     },
     { "name": "Drivetrain",
       "code": "drv",
@@ -43,7 +45,7 @@ var config_data = `
         "s": "Swerve<br>",
         "w": "West Coast/Tank<br>",
         "m": "Mechanum<br>",
-        "o": "Other"
+        "o": "Other(Specify)"
       },
       "defaultValue": "o"
     },
@@ -65,17 +67,21 @@ var config_data = `
       "choices": {
         "c": "Colson<br>",
         "t": "Traction<br>",
-        "g": "Grip Locke<br>",
+        "g": "Grip Lock<br>",
         "o": "Other(Specify)"
       },
       "defaultValue": "o"
     },
-   { "name": "Max Groundspeed<br>fps",
+   { "name": "Max speed (fps)",
       "code": "mgs",
       "type": "number",
-      "defaultValue": "0"
+      "min": 0,
+      "max": 30,
+      "defaultValue": "0",
+      "tooltip": "Max speed in Feet Per Second"
+
     },
-    { "name": "Other Drivetrain",
+    { "name": "Drivetrain Notes",
       "code": "odt",
       "type": "text",
       "size": 20,
@@ -103,19 +109,19 @@ var config_data = `
       },
       "defaultValue":"x"
     },
-     { "name": "L1 Coral",
+     { "name": "Score L1 Coral",
       "code": "l1c",
       "type": "bool"
     },
-     { "name": "L2 Coral",
+     { "name": "Score L2 Coral",
       "code": "l2c",
       "type": "bool"
     },
-     { "name": "L3 Coral",
+     { "name": "Score L3 Coral",
       "code": "l3c",
       "type": "bool"
     },
-     { "name": "L4 Coral",
+     { "name": "Score L4 Coral",
       "code": "l4c",
       "type": "bool"
     },
@@ -149,7 +155,7 @@ var config_data = `
       "max": 10,
       "defaultValue": "0"
     },
-    { "name": "Autos",
+    { "name": "Auto Comments",
       "code": "aut",
       "type": "text",
       "size": 20,
@@ -183,9 +189,11 @@ var config_data = `
     },
      { "name": "# of Camaras",
       "code": "noc",
-      "type": "text",
-      "size": 20,
-      "maxSize": 250
+      "type": "number",
+      "min": 0,
+      "max": 10,
+      "defaultValue": "0",
+      "tooltip": "Number of cameras on robot"
     },
     { "name": "Vision Pipeline",
       "code": "vsp",
@@ -209,7 +217,7 @@ var config_data = `
        },
         "defaultValue":"n"
       },
-        { "name": "Vision Comments",
+        { "name": "Vision Notes",
       "code": "vco",
       "type": "text",
       "size": 20,
@@ -229,7 +237,8 @@ var config_data = `
     },
      { "name": "Load Test Batteries?",
       "code": "ltb",
-      "type": "bool"
+      "type": "bool",
+      "tooltip": "Does the team load test all of their batteries?"
     },
      { "name": "How do you quantify<br>Your Outreach Impact?",
       "code": "qoi",
