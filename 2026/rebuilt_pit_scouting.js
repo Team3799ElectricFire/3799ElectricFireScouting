@@ -5,7 +5,6 @@ var config_data = `
   "page_title": "REBUILT",
   "pitConfig": "true",
   "prematch": [
-  // General Questions
     { "name": "Team Number",
       "code": "t",
       "type": "number"
@@ -66,7 +65,6 @@ var config_data = `
       "code": "nob",
       "type": "number"
     },
-    // Teleop/Auto Questions
     { "name": "# of fuel that robot can carry",
       "code": "mnf",
       "type": "number",
@@ -128,14 +126,12 @@ var config_data = `
       "size": 20,
       "maxSize": 250
     },
-    // Scouting Questions
     { "name": "Scouting Method /<br>Program (ScoutingPASS?)",
       "code": "sct",
       "type": "text",
       "size": 20,
       "maxSize": 250
     },
-    // Programming Questions
     { "name": "Programming Lang",
       "code": "pgl",
       "type": "radio",
@@ -183,7 +179,6 @@ var config_data = `
       "size": 20,
       "maxSize": 250
       },
-      // Misc. Comments
     { "name": "Comments",
       "code": "co",
       "type": "text",
