@@ -78,6 +78,15 @@ var config_data = `
       "code": "opu",
       "type": "bool"
     },
+    { "name": "role preference",
+      "code": "mrb",
+      "type": "radio",
+      "choices": {
+        "1": "Offensive",
+        "2": "Defensive",
+        "3": "neither/both"
+      },
+    }
     { "name": "Autos",
       "code": "aut",
       "type": "text",
