@@ -82,10 +82,11 @@ var config_data = `
       "code": "mrb",
       "type": "radio",
       "choices": {
-        "1": "Offensive",
-        "2": "Defensive",
-        "3": "neither/both"
+        "a": "Offensive",
+        "b": "Defensive",
+        "c": "neither/both"
       },
+       "defaultValue": "a"
     }
     { "name": "Autos",
       "code": "aut",
