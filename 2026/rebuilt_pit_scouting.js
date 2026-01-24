@@ -110,6 +110,16 @@ var config_data = `
       "type": "checkbox",
       "tooltip": "Put help or more descriptive text here"
     },
+    { "name": "Climb Front",
+      "code": "mc",
+      "type": "checkbox",
+      "tooltip": "Put help or more descriptive text here"
+    },
+    { "name": "Climb Side",
+      "code": "mc",
+      "type": "checkbox",
+      "tooltip": "Put help or more descriptive text here"
+    },
     { "name": "Can pass from opp alliance zone",
       "code": "mc",
       "type": "checkbox",
