@@ -66,6 +66,14 @@ var config_data = `
       "code": "nob",
       "type": "number"
     },
+    { "name": "# of fuel that robot can carry",
+      "code": "mnf",
+      "type": "number",
+      "min": 0,
+      "max": 8,
+      "disabled": "false",
+      "defaultValue": 0
+    },
     { "name": "Floor pickup Fuel",
       "code": "fpu",
       "type": "bool"
@@ -99,6 +107,16 @@ var config_data = `
       "tooltip": "Put help or more descriptive text here"
     },
     { "name": "Climb level L3",
+      "code": "mc",
+      "type": "checkbox",
+      "tooltip": "Put help or more descriptive text here"
+    },
+    { "name": "Can pass from opp alliance zone",
+      "code": "mc",
+      "type": "checkbox",
+      "tooltip": "Put help or more descriptive text here"
+    },
+    { "name": "Can pass from nuetral zone",
       "code": "mc",
       "type": "checkbox",
       "tooltip": "Put help or more descriptive text here"
