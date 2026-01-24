@@ -87,7 +87,22 @@ var config_data = `
         "c": "neither/both"
       },
        "defaultValue": "a"
-    }
+    },
+    { "name": "Climb level L1",
+      "code": "mc",
+      "type": "checkbox",
+      "tooltip": "Put help or more descriptive text here"
+    },
+    { "name": "Climb level L2",
+      "code": "mc",
+      "type": "checkbox",
+      "tooltip": "Put help or more descriptive text here"
+    },
+    { "name": "Climb level L3",
+      "code": "mc",
+      "type": "checkbox",
+      "tooltip": "Put help or more descriptive text here"
+    },
     { "name": "Autos",
       "code": "aut",
       "type": "text",
