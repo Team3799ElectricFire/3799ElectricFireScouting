@@ -27,7 +27,8 @@ var config_data = `
         "w": "West Coast/Tank<br>",
         "b": "Butterfly/Grashopper<br>",
         "m": "Mechanum<br>",
-        "o": "Other"
+        "o": "Other",
+        "t": "Testing"
       },
       "defaultValue": "o"
     },
