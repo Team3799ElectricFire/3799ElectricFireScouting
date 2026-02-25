@@ -9,8 +9,20 @@ var config_data = `
       "code": "t",
       "type": "number"
     },
+    { "name": "Event",
+      "code": "e",
+      "type": "event",
+      "defaultValue": "2026nyro",
+      "required": "true"
+    },
+
     { "name": "Width",
       "code": "wid",
+      "type": "number",
+      "defaultValue": "0"
+    },
+    { "name": "Height",
+      "code": "hei",
       "type": "number",
       "defaultValue": "0"
     },
@@ -18,6 +30,14 @@ var config_data = `
       "code": "wei",
       "type": "number",
       "defaultValue": "0"
+    },
+    { "name": "# of Team Members",
+      "code": "mem",
+      "type": "number",
+      "min": 0,
+      "max": 200,
+      "defaultValue": "0",
+      "tooltip": "Number of cameras on robot"
     },
     { "name": "Drivetrain",
       "code": "drv",
@@ -66,11 +86,10 @@ var config_data = `
       "type": "number"
     },
     { "name": "# of fuel that robot can carry",
-      "code": "mnf",
+      "code": "fpc",
       "type": "number",
       "min": 0,
-      "max": 8,
-      "disabled": "false",
+      "max": 100,
       "defaultValue": 0
     },
     { "name": "Floor pickup Fuel",
@@ -85,6 +104,34 @@ var config_data = `
       "code": "opu",
       "type": "bool"
     },
+    { "name": "# of Balls Per Second",
+      "code": "bas",
+      "type": "number",
+      "min": 0,
+      "max": 20,
+      "defaultValue": "0",
+      "tooltip": "Number of cameras on robot"
+    },
+    { "name": "Auto Aim",
+      "code": "aim",
+      "type": "bool"
+    },
+    { "name": "Shoot On The Go",
+      "code": "sog",
+      "type": "bool"
+    },
+    { "name": "Turret",
+      "code": "tur",
+      "type": "bool"
+    },
+    { "name": "Bump",
+      "code": "bum",
+      "type": "bool"
+    },
+    { "name": "Trench",
+      "code": "tre",
+      "type": "bool"
+    },
     { "name": "role preference",
       "code": "mrb",
       "type": "radio",
@@ -93,8 +140,7 @@ var config_data = `
         "b": "Defensive",
         "c": "neither/both"
       },
-       "defaultValue": "a"
-    },
+
     { "name": "Climb level L1",
       "code": "mc",
       "type": "checkbox",
