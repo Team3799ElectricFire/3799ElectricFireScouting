@@ -140,7 +140,8 @@ var config_data = `
         "b": "Defensive",
         "c": "neither/both"
       },
-
+       "defaultValue": "a"
+    },
     { "name": "Climb level L1",
       "code": "mc",
       "type": "checkbox",
