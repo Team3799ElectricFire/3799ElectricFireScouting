@@ -81,10 +81,6 @@ var config_data = `
       },
       "defaultValue":"x"
     },
-    { "name": "# of Batteries",
-      "code": "nob",
-      "type": "number"
-    },
     { "name": "# of fuel that robot can carry",
       "code": "fpc",
       "type": "number",
@@ -167,24 +163,18 @@ var config_data = `
       "type": "checkbox",
       "tooltip": "Put help or more descriptive text here"
     },
-    { "name": "Can pass from opp alliance zone",
+    { "name": "Can pass from nuetral zone",
       "code": "mc",
       "type": "checkbox",
       "tooltip": "Put help or more descriptive text here"
     },
-    { "name": "Can pass from nuetral zone",
+    { "name": "Can pass from opp alliance zone",
       "code": "mc",
       "type": "checkbox",
       "tooltip": "Put help or more descriptive text here"
     },
     { "name": "Autos",
       "code": "aut",
-      "type": "text",
-      "size": 20,
-      "maxSize": 250
-    },
-    { "name": "Scouting Method /<br>Program (ScoutingPASS?)",
-      "code": "sct",
       "type": "text",
       "size": 20,
       "maxSize": 250
@@ -219,18 +209,7 @@ var config_data = `
       },
        "defaultValue":"n"
      },
-     { "name": "Vision Coprocessor",
-      "code": "vsc",
-      "type": "radio",
-      "choices": {
-        "r": "Raspberry Pi 5<br>",
-        "o": "Orange Pi<br>",
-        "t": "Other<br>",
-        "n": "No Vision"
-       },
-        "defaultValue":"n"
-      },
-        { "name": "Vision Notes",
+      { "name": "Vision Notes",
       "code": "vco",
       "type": "text",
       "size": 20,
