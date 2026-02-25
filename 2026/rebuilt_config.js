@@ -15,13 +15,14 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2026ilch",
+      "defaultValue": "2026nyro",
       "required": "true"
     },
     { "name": "Match Level",
       "code": "l",
       "type": "level",
       "choices": {
+        "pm": "Practice<br>",
         "qm": "Quals<br>",
         "sf": "Semifinals<br>",
         "f": "Finals"
@@ -82,6 +83,13 @@ var config_data = `
       "altInc2": 5,
       "type": "counter"
     },
+        { "name": "Fuel Missed",
+      "code": "afm",
+      "expectedMax": 32,
+      "altInc1": 10,
+      "altInc2": 5,
+      "type": "counter"
+    },
     { "name": "Pass from Neutral Zone",
       "code": "apn",
       "expectedMax": 60,
@@ -124,6 +132,13 @@ var config_data = `
     },
     { "name": "Fuel Scored",
       "code": "tfs",
+      "expectedMax": 150,
+      "altInc1": 10,
+      "altInc2": 5,
+      "type": "counter"
+    },
+        { "name": "Fuel Missed",
+      "code": "tfm",
       "expectedMax": 150,
       "altInc1": 10,
       "altInc2": 5,
@@ -226,6 +241,18 @@ var config_data = `
       "tooltip": "Would you want this robot on your alliance in eliminations?",
       "code": "all",
       "type": "bool"
+    },
+        { "name": "Robot Agression",
+      "code": "rag",
+      "type": "radio",
+      "choices": {
+        "1": "1 (Careful)<br>",
+        "2": "2<br>",
+        "3": "3<br>",
+        "4": "4<br>",
+        "5": "5 (Agressive, Risk Taker)"
+      },
+      "defaultValue":"3"
     },
     { "name": "Was Defended",
       "code": "def",
