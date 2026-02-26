@@ -129,47 +129,47 @@ var config_data = `
       "type": "bool"
     },
     { "name": "role preference",
-      "code": "mrb",
+      "code": "rpg",
       "type": "radio",
       "choices": {
-        "a": "Offensive",
-        "b": "Defensive",
-        "c": "neither/both"
+        "o": "offensive<br>",
+        "d": "defensive<br>",
+        "x": "neither/both"
       },
-       "defaultValue": "a"
-    },
+      "defaultValue": "x"
+    },  
     { "name": "Climb level L1",
-      "code": "mc",
+      "code": "mc1",
       "type": "checkbox",
       "tooltip": "Put help or more descriptive text here"
     },
     { "name": "Climb level L2",
-      "code": "mc",
+      "code": "mc2",
       "type": "checkbox",
       "tooltip": "Put help or more descriptive text here"
     },
     { "name": "Climb level L3",
-      "code": "mc",
+      "code": "mc3",
       "type": "checkbox",
       "tooltip": "Put help or more descriptive text here"
     },
     { "name": "Climb Front",
-      "code": "mc",
+      "code": "mcf",
       "type": "checkbox",
       "tooltip": "Put help or more descriptive text here"
     },
     { "name": "Climb Side",
-      "code": "mc",
+      "code": "mcs",
       "type": "checkbox",
       "tooltip": "Put help or more descriptive text here"
     },
     { "name": "Can pass from nuetral zone",
-      "code": "mc",
+      "code": "pnz",
       "type": "checkbox",
       "tooltip": "Put help or more descriptive text here"
     },
     { "name": "Can pass from opp alliance zone",
-      "code": "mc",
+      "code": "pop",
       "type": "checkbox",
       "tooltip": "Put help or more descriptive text here"
     },
