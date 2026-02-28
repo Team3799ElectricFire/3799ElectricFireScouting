@@ -98,7 +98,7 @@ var config_data = `
       "type": "number",
       "min": 0,
       "max": 50,
-      "defaultValue": "0",
+      "defaultValue": "0"
     },
     { "name": "Auto Aim",
       "code": "aim",
