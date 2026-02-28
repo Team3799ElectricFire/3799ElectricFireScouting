@@ -15,7 +15,14 @@ var config_data = `
       "defaultValue": "2026nyro",
       "required": "true"
     },
-
+    { "name": "# of Team Members",
+      "code": "mem",
+      "type": "number",
+      "min": 0,
+      "max": 200,
+      "defaultValue": "0",
+      "tooltip": "Number of cameras on robot"
+    },
     { "name": "Width",
       "code": "wid",
       "type": "number",
@@ -31,21 +38,12 @@ var config_data = `
       "type": "number",
       "defaultValue": "0"
     },
-    { "name": "# of Team Members",
-      "code": "mem",
-      "type": "number",
-      "min": 0,
-      "max": 200,
-      "defaultValue": "0",
-      "tooltip": "Number of cameras on robot"
-    },
     { "name": "Drivetrain",
       "code": "drv",
       "type": "radio",
       "choices": {
         "s": "Swerve<br>",
         "w": "West Coast/Tank<br>",
-        "b": "Butterfly/Grashopper<br>",
         "m": "Mechanum<br>",
         "o": "Other"
       },
@@ -57,32 +55,20 @@ var config_data = `
       "size": 20,
       "maxSize": 50
     },
-    { "name": "Swerve Ratio",
-      "code": "sr",
-      "type": "radio",
-      "choices": {
-        "1": "L1 (8.14:1)<br>",
-        "2": "L2 (6.75:1)<br>",
-        "3": "L3 (6.12:1)<br>",
-        "4": "L4 (5.14:1)<br>",
-        "o": "Other ratio (put in comments)<br>",
-        "x": "Not Swerve"
-      },
-      "defaultValue":"x"
-    },
     { "name": "Drivetrain Motor",
       "code": "mot",
       "type": "radio",
       "choices": {
-        "n": "Neo<br>",
+        "n": "Neo Vortex<br>",
         "f": "Falcon<br>",
+        "k": "Kracken<br>",
         "c": "CIM<br>",
         "x": "Other<br>"
       },
       "defaultValue":"x"
     },
-    { "name": "# of fuel that robot can carry",
-      "code": "fpc",
+    { "name": "Ground Speed",
+      "code": "gsp",
       "type": "number",
       "min": 0,
       "max": 100,
@@ -92,21 +78,27 @@ var config_data = `
       "code": "fpu",
       "type": "bool"
     },
-    { "name": "Depot pickup Fuel",
+    { "name": "Depot (floor) pickup",
       "code": "dpu",
       "type": "bool"
     },
-    { "name": "Outpost pickup Fuel",
+    { "name": "Outpost (Human Player) pickup",
       "code": "opu",
       "type": "bool"
     },
-    { "name": "# of Balls Per Second",
+    { "name": "Fuel Capacity",
+      "code": "fpc",
+      "type": "number",
+      "min": 0,
+      "max": 100,
+      "defaultValue": 0
+    },
+    { "name": "Balls Per Second",
       "code": "bas",
       "type": "number",
       "min": 0,
-      "max": 20,
+      "max": 50,
       "defaultValue": "0",
-      "tooltip": "Number of cameras on robot"
     },
     { "name": "Auto Aim",
       "code": "aim",
@@ -116,8 +108,22 @@ var config_data = `
       "code": "sog",
       "type": "bool"
     },
+    { "name": "Pass from nuetral zone",
+      "code": "pnz",
+      "type": "checkbox",
+      "tooltip": "Put help or more descriptive text here"
+    },
+    { "name": "Pass from opp alliance zone",
+      "code": "pop",
+      "type": "checkbox",
+      "tooltip": "Put help or more descriptive text here"
+    },
     { "name": "Turret",
       "code": "tur",
+      "type": "bool"
+    },
+     { "name": "Adj Hood",
+      "code": "ahd",
       "type": "bool"
     },
     { "name": "Bump",
@@ -128,16 +134,6 @@ var config_data = `
       "code": "tre",
       "type": "bool"
     },
-    { "name": "role preference",
-      "code": "rpg",
-      "type": "radio",
-      "choices": {
-        "o": "offensive<br>",
-        "d": "defensive<br>",
-        "x": "neither/both"
-      },
-      "defaultValue": "x"
-    },  
     { "name": "Climb level L1",
       "code": "mc1",
       "type": "checkbox",
@@ -163,13 +159,8 @@ var config_data = `
       "type": "checkbox",
       "tooltip": "Put help or more descriptive text here"
     },
-    { "name": "Can pass from nuetral zone",
-      "code": "pnz",
-      "type": "checkbox",
-      "tooltip": "Put help or more descriptive text here"
-    },
-    { "name": "Can pass from opp alliance zone",
-      "code": "pop",
+        { "name": "Auto Climb",
+      "code": "ac1",
       "type": "checkbox",
       "tooltip": "Put help or more descriptive text here"
     },
@@ -179,6 +170,23 @@ var config_data = `
       "size": 20,
       "maxSize": 250
     },
+        { "name": "Prefered Start Pos",
+      "code": "psp",
+      "type": "text",
+      "size": 20,
+      "maxSize": 250
+    },
+    { "name": "role preference",
+      "code": "rpg",
+      "type": "radio",
+      "choices": {
+        "o": "offensive<br>",
+        "d": "defensive<br>",
+        "f": "feeder<br>",
+        "x": "Any"
+      },
+      "defaultValue": "x"
+    },  
     { "name": "Programming Lang",
       "code": "pgl",
       "type": "radio",
