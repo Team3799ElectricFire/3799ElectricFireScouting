@@ -21,7 +21,7 @@ var config_data = `
       "min": 0,
       "max": 200,
       "defaultValue": "0",
-      "tooltip": "Number of cameras on robot"
+      "tooltip": "Number of students on the teamt"
     },
     { "name": "Width",
       "code": "wid",
@@ -73,6 +73,12 @@ var config_data = `
       "min": 0,
       "max": 100,
       "defaultValue": 0
+    },
+    { "name": "Intake Roller Construction",
+      "code": "irc",
+      "type": "text",
+      "size": 20,
+      "maxSize": 250
     },
     { "name": "Floor pickup Fuel",
       "code": "fpu",
@@ -170,7 +176,7 @@ var config_data = `
       "size": 20,
       "maxSize": 250
     },
-        { "name": "Prefered Start Pos",
+    { "name": "Prefered Start Pos",
       "code": "psp",
       "type": "text",
       "size": 20,
@@ -186,7 +192,15 @@ var config_data = `
         "x": "Any"
       },
       "defaultValue": "x"
-    },  
+    },
+    { "name": "Hrs. of Drive Practice",
+      "code": "hdp",
+      "type": "number",
+      "min": 0,
+      "max": 200,
+      "defaultValue": "0",
+      "tooltip": "Hours driving with this years robot"
+    },
     { "name": "Programming Lang",
       "code": "pgl",
       "type": "radio",
