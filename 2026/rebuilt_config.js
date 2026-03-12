@@ -111,7 +111,7 @@ var config_data = `
       "code": "afd",
       "type": "bool"
     },
-    { "name": "Pickup from Outpost",
+    { "name": "Pickup from Outpost (Human)",
       "code": "afo",
       "type": "bool"
     },
@@ -162,7 +162,7 @@ var config_data = `
       "code": "tfd",
       "type": "bool"
     },
-    { "name": "Pickup from Outpost",
+    { "name": "Pickup from Outpost (Human)",
       "code": "tfo",
       "type": "bool"
     },
@@ -176,9 +176,9 @@ var config_data = `
       "code": "tc",
       "type": "radio",
       "choices": {
-        "1": "Level 1<br>",
-        "2": "Level 2<br>",
-        "3": "Level 3<br>",
+        "l1": "Level 1<br>",
+        "l2": "Level 2<br>",
+        "l3": "Level 3<br>",
         "a": "Attempted<br>",
         "x": "Not Attempted"
       },
@@ -261,13 +261,6 @@ var config_data = `
     { "name": "Excessive Penalties",
       "code": "pen",
       "type": "bool"
-    },
-    { "name": "Fuel Percentage",
-      "tooltip": "What percentage of the total fuel for this alliance did this robot score?",
-      "code": "pct",
-      "type": "number",
-      "min": 0,
-      "max": 100
     },
     { "name": "Comments",
       "code": "co",
