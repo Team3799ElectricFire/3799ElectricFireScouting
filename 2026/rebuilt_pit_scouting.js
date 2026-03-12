@@ -23,17 +23,17 @@ var config_data = `
       "defaultValue": "0",
       "tooltip": "Number of students on the teamt"
     },
-    { "name": "Width",
+    { "name": "Narrow Width With Bumper (in)",
       "code": "wid",
       "type": "number",
       "defaultValue": "0"
     },
-    { "name": "Height",
+    { "name": "Height (in)",
       "code": "hei",
       "type": "number",
       "defaultValue": "0"
     },
-    { "name": "Weight",
+    { "name": "Weight (lb)",
       "code": "wei",
       "type": "number",
       "defaultValue": "0"
@@ -67,7 +67,7 @@ var config_data = `
       },
       "defaultValue":"x"
     },
-    { "name": "Ground Speed",
+    { "name": "Ground Speed (fps)",
       "code": "gsp",
       "type": "number",
       "min": 0,
@@ -103,7 +103,7 @@ var config_data = `
       "code": "bas",
       "type": "number",
       "min": 0,
-      "max": 50,
+      "max": 80,
       "defaultValue": "0"
     },
     { "name": "Auto Aim",
